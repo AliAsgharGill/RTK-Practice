@@ -5,20 +5,22 @@ const Home = () => {
   const dispatch = useDispatch();
   return (
     <>
-      <h1>Redux Toolkit Example</h1>
+      <h1>Redux Toolkit</h1>
       <p>Count:{count}</p>
       <button
         onClick={() => {
-          dispatch(increment);
+          dispatch(increment());
         }}
       >
         Increment
       </button>
       <button
         onClick={() => {
-          dispatch(decrement);
+          dispatch(decrement());
         }}
-      ></button>
+      >
+        Decrement
+      </button>
     </>
   );
 };
